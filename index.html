@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkScan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">TalkScan</h1>
+            <p class="subtitle">Image Text Recognition and Vocalization</p>
+        </div>
+        <div class="body">
+            <div>
+                <input type="file" accept="image/jpeg" id="imageInput" style="display: none;">
+                <label for="imageInput" class="choose-btn">Choose Image</label>
+                <span id="selectedFileName" class="file-name"></span>
+            </div>
+            <div>
+                <button id="convertButton">Convert to Speech</button>
+                <button id="pauseButton" >Pause</button>
+                <button id="resumeButton">Resume</button>
+            </div>
+            <div id="output" style="color: white;"></div>
+            <div id="loader" style="display: none;">Loading...</div>
+            <button id="resetButton" class="resetBTN">Reset</button>
+        </div>      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script> 
+    
+    <!-- it is pre defined lib -->
+
+<!-- 
+    File Input: An <input> element of type file allows the user to upload an image.
+    File Reader: The FileReader object reads the image file as a data URL.
+    Image Element: An Image object is used to load the image data.
+    Tesseract.recognize: This function from Tesseract.js performs the OCR. It takes the image, the language, and an options object (here, logging progress data) as arguments.
+    Output: The recognized text is displayed in a <div> with the id output
+-->
+
+
+    <script src="script.js"></script>   
+</body>
+</html>
