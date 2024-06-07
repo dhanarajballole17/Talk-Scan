@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    overflow-y: hidden;
+    background-image: url(image2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.resetBTN {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    font-family: serif;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 36px;
+    margin: 0;
+    color: white;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 0;
+    color: red;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    width: 600px;
+    height: 400px;
+    background-image: url(back.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#convertButton, #pauseButton, #resumeButton {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    background-color: green;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    font-family: serif;
+}
+
+#pauseButton, #resumeButton {
+    background-color: #007bff;
+}
+
+#pauseButton:hover, #resumeButton:hover {
+    background-color: #0056b3;
+}
+
+
+.choose-btn {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.choose-btn:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] + label {
+    font-size: 16px;
+    background-color: gray;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"] + label:hover {
+    background-color: #0056b3;
+  
+}
